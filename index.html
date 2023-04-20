@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header"><img class="header__img" src="./eisenhower-matrix.jpg"><a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
-    <div class="main">
+    <header class="header"><img class="header__img" src="./eisenhower-matrix.jpg"><a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></header>
+    <main class="main">
       <label class="title new-task__title" for="new-task">Add Item</label>
-      <div class="task-wrapper"><input id="new-task" class="task" type="text"><button class="btn">Add</button></div>
+      <p class="task-wrapper"><input id="new-task" class="task" type="text"><button class="btn">Add</button></p>
       <h3 class="title">Todo</h3>
       <ul id="uncompleted-tasks" class="task-list">
         <li class="task-list__item"><input class="checkbox" type="checkbox"><label class="task__label">Pay Bills</label><input type="text" class="task task__text"><button class="btn edit">Edit</button><button class="btn delete"><img class="delete__img" src="./remove.svg"></button></li>
@@ -19,7 +19,7 @@
       <ul id="completed-tasks" class="task-list completed-task-list">
         <li class="task-list__item"><input class="checkbox" type="checkbox" checked><label class="task__label completed-task-list__label">See the Doctor</label><input type="text" class="task task__text"><button class="btn edit">Edit</button><button class="btn delete"><img class="delete__img" src="./remove.svg"></button></li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@ var completedTasksHolder = document.getElementById("completed-tasks");//complete
 //New task list item
 var createNewTaskElement = function(taskString) {
   var listItem = document.createElement("li");
-  listItem.classList.add('task-list__item');
+  listItem.classList.add("task-list__item");
   //input (checkbox)
   var checkBox = document.createElement("input");//checkbx
   //label
@@ -27,22 +27,22 @@ var createNewTaskElement = function(taskString) {
   var deleteButtonImg = document.createElement("img");//delete button image
 
   label.innerText = taskString;
-  label.className = 'task__label';
+  label.className = "task__label";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
   checkBox.className = "checkbox";
   editInput.type = "text";
   editInput.className = "task";
-  editInput.classList.add('task__text');
+  editInput.classList.add("task__text");
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "edit";
-  editButton.classList.add('btn');
+  editButton.classList.add("btn");
   deleteButton.className = "delete";
-  deleteButton.classList.add('btn');
-  deleteButtonImg.src = './remove.svg';
-  deleteButtonImg.alt = '';
-  deleteButtonImg.className = 'delete__img';
+  deleteButton.classList.add("btn");
+  deleteButtonImg.src = "./remove.svg";
+  deleteButtonImg.alt = "";
+  deleteButtonImg.className = "delete__img";
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -71,7 +71,7 @@ var editTask = function() {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
   var listItem = this.parentNode;
-  var editInput = listItem.querySelector('input[type=text]');
+  var editInput = listItem.querySelector("input[type=text]");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("edit-mode");
